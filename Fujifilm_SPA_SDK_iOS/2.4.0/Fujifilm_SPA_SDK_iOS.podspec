@@ -21,15 +21,14 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '14.0'
+    s.source           = {:http => 'https://github.com/samfriedmanfuji/PodSpecs/releases/download/2.4.0/Fujifilm_SPA_SDK_iOS-Pods.zip'}
   s.default_subspec = 'Braintree'
 s.subspec 'Braintree' do |braintree|
   braintree.dependency 'Braintree', '~> 6.32'
-  braintree.source           = {:http => 'https://github.com/samfriedmanfuji/PodSpecs/releases/download/2.4.0/Fujifilm_SPA_SDK_iOS-Pods.zip'}
-
+  braintree.vendored_frameworks = 'Braintree/Fujifilm_SPA_SDK_iOS.xcframework', 'FFImagePicker2.xcframework'
 end
 s.subspec 'Lite' do |lite|
-    lite.source           = {:http => 'https://github.com/samfriedmanfuji/PodSpecs/releases/download/2.4.0/Fujifilm_SPA_SDK_iOS-Lite-Pods.zip'}
+  lite.vendored_frameworks = 'Lite/Fujifilm_SPA_SDK_iOS.xcframework', 'FFImagePicker2.xcframework'
 end
 
-  s.vendored_frameworks = 'Fujifilm_SPA_SDK_iOS.xcframework', 'FFImagePicker2.xcframework'
 end
