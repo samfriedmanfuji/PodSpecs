@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'iOS/NewiOSPodsWorkspace/Fujifilm_SPA_SDK_iOS/LICENSE' }
   s.author           = { 'Sam Friedman' => 'sam.friedman@fujifilm.com' }
-  s.source           = {:http => 'https://github.com/samfriedmanfuji/PodSpecs/releases/download/2.4.0/Fujifilm_SPA_SDK_iOS.xcframework.zip'}
+  s.source           = {:http => 'https://github.com/samfriedmanfuji/PodSpecs/releases/download/2.4.0/Fujifilm_SPA_SDK_iOS-Pods.zip'}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '14.0'
