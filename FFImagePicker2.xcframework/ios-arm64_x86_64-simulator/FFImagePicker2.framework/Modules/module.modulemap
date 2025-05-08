@@ -1,6 +1,0 @@
-framework module FFImagePicker2 {
-  umbrella header "FFImagePicker2-umbrella.h"
-
-  export *
-  module * { export * }
-}

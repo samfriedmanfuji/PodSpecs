@@ -1,6 +1,0 @@
-framework module Fujifilm_SPA_SDK_iOS {
-  umbrella header "Fujifilm_SPA_SDK_iOS-umbrella.h"
-
-  export *
-  module * { export * }
-}
